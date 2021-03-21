@@ -1,0 +1,1 @@
+export type InferActionsTypes<T> = T extends { [keys: string]: infer U } ? U : never
