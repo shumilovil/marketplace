@@ -1,3 +1,4 @@
+import { Button } from 'antd'
 import React from 'react'
 
 interface MapPropsIF {
@@ -8,6 +9,7 @@ export const TestComponent: React.FC<MapPropsIF> = (props) => {
     return (
         <div>
             {props.testRes}
+            <Button type="primary">Button</Button>
         </div>
     )
 }

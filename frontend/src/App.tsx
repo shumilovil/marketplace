@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useEffect, useState } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.less';
 import { useDispatch, useSelector } from 'react-redux'
 import { eatActions } from './redux/testReducer';
 import { RootState } from './redux/store';
@@ -42,7 +42,7 @@ function App() {
     <div className="App">
       <div>{name}</div>
       <button onClick={clickHandler}>Голоден</button>
-      <div>Хочу есть? {hunger ? 'Yes' : 'No'}</div>
+      <div>Хочу есть&&&? {hunger ? 'Yes' : 'No'}</div>
       <input type="text" placeholder="New name" onBlur={inputHandler} />
       <TestComponent testRes={test} />
     </div>
